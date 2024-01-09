@@ -1,0 +1,139 @@
+{
+    "apartments": [
+        {
+            "id": "1",
+            "title": "GRÜNER HOTEL",
+            "lat": 49.842088182087636,
+            "lng": 24.022936367220623,
+            "price": "3655₴",
+            "adress": "пл. Генерала Григоренко, 5",
+            "city": "Львів",
+            "img": [
+                {
+                    "id": 0,
+                    "src": "../images/apartments_1/1.jpg",
+                    "alt": "apartments 1 Lviv"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/apartments_1/2.jpg",
+                    "alt": "apartments 1 Lviv"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/apartments_1/3.jpg",
+                    "alt": "apartments 1 Lviv"
+                }
+            ],
+            "zoomLevel": [15, 16, 17, 18]
+        },
+        {
+            "id": "2",
+            "title": "Blum Hotel",
+            "lat": 49.83945225651153,
+            "lng": 24.023851075428095,
+            "price": "1478₴",
+            "adress": "вул. Дрогобича, 4",
+            "city": "Львів",
+            "img": [
+                {
+                    "id": 0,
+                    "src": "../images/apartments_2/1.png",
+                    "alt": "apartments 2 Lviv"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/apartments_2/2.jpg",
+                    "alt": "apartments 2 Lviv"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/apartments_2/3.jpg",
+                    "alt": "apartments 2 Lviv"
+                }
+            ],
+            "zoomLevel": [15, 16, 17, 18]
+        },
+        {
+            "id": "3",
+            "title": "Grand Hotel Lviv",
+            "lat": 49.8410470570719,
+            "lng": 24.02699687261742,
+            "price": "5300₴",
+            "adress": "проспект Свободи, 13",
+            "city": "Львів",
+            "img": [
+                {
+                    "id": 0,
+                    "src": "../images/apartments_3/1.jpg",
+                    "alt": "apartments 3 Lviv"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/apartments_3/2.jpg",
+                    "alt": "apartments 3 Lviv"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/apartments_3/3.jpg",
+                    "alt": "apartments 3 Lviv"
+                }
+            ],
+            "zoomLevel": [16, 17, 18]
+        },
+        {
+            "id": "4",
+            "title": "Premium Hostel",
+            "lat": 49.84171128967169,
+            "lng": 24.029636166317758,
+            "price": "1144₴",
+            "adress": "вулиця Театральна, 10/5",
+            "city": "Львів",
+            "img": [
+                {
+                    "id": 0,
+                    "src": "../images/apartments_4/1.jpg",
+                    "alt": "apartments 4 Lviv"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/apartments_4/2.jpg",
+                    "alt": "apartments 4 Lviv"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/apartments_4/3.jpg",
+                    "alt": "apartments 4 Lviv"
+                }
+            ],
+            "zoomLevel": [16, 17, 18]
+        },
+        {
+            "id": "5",
+            "title": "Шопен",
+            "lat": 49.83785031005027,
+            "lng": 24.028262875286686,
+            "price": "2743₴",
+            "adress": "площа Євгена Маланюка, 7",
+            "city": "Львів",
+            "img": [
+                {
+                    "id": 0,
+                    "src": "../images/apartments_5/1.jpg",
+                    "alt": "apartments 5 Lviv"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/apartments_5/2.jpg",
+                    "alt": "apartments 5 Lviv"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/apartments_5/3.jpg",
+                    "alt": "apartments 5 Lviv"
+                }
+            ],
+            "zoomLevel": [14, 15, 16, 17, 18]
+        }
+    ]
+}
