@@ -1,0 +1,136 @@
+@import '../styles/mixins.scss';
+@import '../styles/variables.scss';
+
+.card {
+    height: 330px;
+    width: 230px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    position: relative;
+
+    @include betweenTabletAndDesktop {
+        height: 300px;
+        width: 200px;
+    }
+
+    @include onTablet {
+        margin: 30px auto;
+        min-width: 200px;
+        height: 290px;
+    }
+
+    &__top {
+        position: relative;
+
+        &_carousel {
+            display: flex;
+            height: 170px;
+            width: 100%;
+
+            &_btn_left {
+                position: absolute;
+                top: 50%;
+                right: 85%;
+                height: 25px;
+                color: var(--btn-color);
+                background-color: var(--main-color);
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 3px;
+            }
+
+            &_btn_right {
+                position: absolute;
+                top: 50%;
+                left: 85%;
+                height: 25px;
+                color: var(--btn-color);
+                background-color: var(--main-color);
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 3px;
+            }
+
+            &_img {
+                width: 100%;
+                border: 3px solid rgba(255, 255, 255, 0.336);
+                border-radius: 10px;
+                cursor: pointer;
+
+                @include betweenTabletAndDesktop {
+                    height: 90%;
+                }
+
+                &_hidden {
+                    display: none;
+                }
+            }
+        }
+
+        &__btn_block {
+            position: absolute;
+            top: 10%;
+            right: 8%;
+
+            &_favorite_btn {
+                background-color: var(--main-color);
+                border: 1px solid rgba(113, 122, 143, 0.486);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-left: 8px;
+        color: var(--text-color);
+        position: absolute;
+        bottom: 0;
+        min-width: 200px;
+
+        &_title {
+            font-size: 25px;
+
+
+            @include betweenTabletAndDesktop {
+                font-size: 18px;
+            }
+
+        }
+
+        &_adress {
+            color: var(--text-color);
+            margin-bottom: 16px;
+
+            @include betweenTabletAndDesktop {
+                margin-bottom: 18px;
+                font-size: 14px;
+            }
+        }
+
+        &_price {
+            padding: 0 5px;
+            background-color: rgba(243, 235, 235, 0.925);
+            width: 50%;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 6px;
+
+            @include betweenTabletAndDesktop {
+                font-size: 20px;
+            }
+        }
+
+        &_city {
+            color: rgba(37, 56, 83, 0.527);
+            margin-bottom: 16px;
+            float: right;
+
+            @include betweenTabletAndDesktop {
+                font-size: 14px;
+                margin-right: 35px;
+            }
+        }
+
+    }
+}

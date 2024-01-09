@@ -1,0 +1,103 @@
+@import '../styles/mixins.scss';
+@import '../styles/mixins.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include onTablet {
+        flex-direction: column-reverse;
+    }
+
+    &__map {
+        height: 100vh;
+        width: 65%;
+
+        @include onTablet {
+            width: 100vw;
+            height: 500px;
+        }
+    }
+
+    &__left_side {
+        width: 279px;
+        height: 100vh;
+        background: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include onTablet {
+            width: 100vw;
+            height: 180px;
+        }
+
+        &_btn {
+            width: 220px;
+            height: 40px;
+            margin: 36px 0 18px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            color: var(--text-color);
+            cursor: pointer;
+
+            @include betweenTabletAndDesktop {
+                width: 210px;
+            }
+
+            &_error {
+                box-shadow: 2px 3px 5px var(--error-color);
+            }
+
+            &:hover {
+                box-shadow: 2px 3px 5px var(--text-color);
+                transition: all .3s;
+            }
+        }
+
+        &_error_message {
+            color: var(--error-color);
+            text-shadow: 2px 3px 5px rgba(199, 147, 143, 0.219);
+            font-weight: 600;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__right_side {
+        width: 279px;
+        height: 100vh;
+        background: var(--secondary-color);
+        overflow: auto;
+
+        @include onTablet {
+            width: 100vw;
+            height: 200px;
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }
+
+    &__modal_advertising {
+        z-index: 1000;
+    }
+
+    &__modal_reserve {
+        z-index: 1000;
+    }
+}
+
+[theme='dark'] {
+    .container {
+        &__left_side {
+            &_btn {
+                background-color: rgba(192, 192, 192, 0.822);
+                color: rgba(48, 64, 87, 0.596);
+            }
+        }
+    }
+}

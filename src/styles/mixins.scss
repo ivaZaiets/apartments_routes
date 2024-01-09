@@ -1,0 +1,11 @@
+@mixin betweenTabletAndDesktop {
+    @media (max-width: 1090px) {
+        @content;
+    }
+}
+
+@mixin onTablet {
+    @media (max-width: 850px) {
+        @content;
+    }
+}

@@ -1,0 +1,31 @@
+import { ReactNode } from "react";
+import { Apartments } from "./apartments";
+
+export interface ApartmentsContextInterface {
+    currentZoomLevel: number,
+    setCurrentZoomLevel: (value: number) => void,
+    modalReserve: Apartments | null,
+    setModalReserve: (value: Apartments | null) => void,
+    allApartments: Apartments[],
+    setAllApartments: (value: Apartments[]) => void,
+    initialApartments: boolean,
+    setInitialApartments: (value: boolean) => void,
+    isAccess: boolean,
+    setIsAccess: (value: boolean) => void,
+    isClose: boolean,
+    setIsClose: (value: boolean) => void,
+    query: string,
+    setQuery: (value: string) => void,
+    price: string,
+    setPrice: (value: string) => void,
+    adress: string,
+    setAdress: (value: string) => void,
+    city: string,
+    setCity: (value: string) => void,
+    error: boolean,
+    setError: (value: boolean) => void,
+    theme: string,
+    setTheme: (value: React.SetStateAction<string>) => void,
+    MapAddAdvertising: () => ReactNode,
+    MapCatchError: () => ReactNode,
+}

@@ -1,0 +1,17 @@
+:root {
+    --main-color: rgba(255, 255, 255, 0.719);
+    --secondary-color: rgba(169, 188, 189, 0.664);
+    --text-color: rgba(37, 56, 83, 0.527);
+    --error-color: rgba(187, 73, 73, 0.281);
+    --btn-color: gray;
+    --bg-card-color: #c9c9c9e5;
+}
+
+[theme='dark'] {
+    --main-color: rgba(255, 255, 255, 0.719);
+    --secondary-color: rgba(57, 54, 68, 0.664);
+    --text-color: rgba(43, 77, 126, 0.527);
+    --error-color: rgba(252, 142, 142, 0.678);
+    --btn-color: gray;
+    --bg-card-color: #c9c9c9e5;
+}

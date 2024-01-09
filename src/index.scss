@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(243, 235, 235, 0.925);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7a9a9cc9;
+}
+
+[theme='dark'] {
+    ::-webkit-scrollbar {
+        background: rgba(192, 186, 186, 0.925);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #3e4d4ec9;
+    }
+}
